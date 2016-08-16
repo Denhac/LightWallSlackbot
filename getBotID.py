@@ -5,8 +5,6 @@ from slackclient import SlackClient
 BOT_NAME = 'lightwall'
 
 slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
-#slack_client = SlackClient('xoxb-61338772672-2kHdgniO3CECJD7aNaKsl8v8')
-
 
 if __name__ == "__main__":
     api_call = slack_client.api_call("users.list")
