@@ -36,7 +36,7 @@ def handle_command(command, channel):
     print("Handling")
     if command.startswith(EXAMPLE_COMMAND):
         response = "Sure...write some more code then I can do that!"
-    if command.upcase.startswith("red alert"):
+    if command.startswith("red alert"):
 	response = "Initiating Red Alert!"
 	red_alert()
     slack_client.api_call("chat.postMessage", channel=channel,
